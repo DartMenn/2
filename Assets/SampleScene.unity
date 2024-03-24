@@ -121,58 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: a96edda7689ba3e4fa82ee83016aa807, type: 2}
---- !u!1 &437200143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 437200144}
-  - component: {fileID: 437200145}
-  m_Layer: 0
-  m_Name: Spawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &437200144
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437200143}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.951, y: 1.201, z: 1.83}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 446659721}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &437200145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437200143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64b5fc7deefd47b4bbc8bd4b2ac6d3c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireballPrefab: {fileID: 2629847048978868001, guid: 6c12f59672bb49847a893788d5e95f65,
-    type: 3}
-  spawnInterval: 0.5
---- !u!4 &446659721 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2499054711585261465, guid: 58050fd8d384a084099b010cda859866,
-    type: 3}
-  m_PrefabInstance: {fileID: 2499054711962942224}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &446659723 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2499054711585261467, guid: 58050fd8d384a084099b010cda859866,
@@ -367,6 +315,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.9219971
       objectReference: {fileID: 0}
+    - target: {fileID: 2247698599895105215, guid: 58050fd8d384a084099b010cda859866,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247698599895105215, guid: 58050fd8d384a084099b010cda859866,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2499054711585261463, guid: 58050fd8d384a084099b010cda859866,
         type: 3}
       propertyPath: m_Name
@@ -463,10 +421,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2629847048978868001, guid: 6c12f59672bb49847a893788d5e95f65,
         type: 3}
-    - target: {fileID: 4008129578139519932, guid: 58050fd8d384a084099b010cda859866,
+    - target: {fileID: 2673849722392631368, guid: 58050fd8d384a084099b010cda859866,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3330824312701480684, guid: 58050fd8d384a084099b010cda859866,
+        type: 3}
+      propertyPath: grenadePrefab
+      value: 
+      objectReference: {fileID: -1272013848287809850, guid: 5e287f359423fc5478a3ed90107f5603,
+        type: 3}
+    - target: {fileID: 4008129578139519932, guid: 58050fd8d384a084099b010cda859866,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4008129578139519932, guid: 58050fd8d384a084099b010cda859866,
         type: 3}
