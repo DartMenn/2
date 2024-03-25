@@ -6,6 +6,7 @@ public class Explosion : MonoBehaviour
 {
     public float maxSize = 5;
     public float speed = 5;
+    public float damage = 50;
 
     private void Start()
     {
@@ -18,6 +19,14 @@ public class Explosion : MonoBehaviour
         if (transform.localScale.x > maxSize)
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        var Health = other.GetComponent<Health>();
+        if (Health != null)
+        {
+            Health.GetDamage(damage);
         }
     }
 }
